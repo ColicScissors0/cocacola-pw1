@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coca-Cola</title>
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+        <a href="#" class="logo"> <img src= "coca_cola_img/logo.png"></a>
+        <ul>
+            <li><a href="#"> Início</a></li>
+            <li><a href="#"> Menu</a></li>
+            <li><a href="#"> Novidades</a></li>
+            <li><a href="#"> Contato</a></li>
+        </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Não é só um Refri<br> É <span>Coca-Cola</span></h2>
+                <p>Está com vontade de tomar uma Coca-Cola gelada mas não quer sair de casa? Agora seus problemas estão resolvidos! Quando a vontade bater,
+                    acesse o nosso site e escolha o refri de sua preferência que ele será entregue rapidamente em sua casa. Aproveite!</p>
+                <a href="#">Saiba mais</a>
+        </div>
+        <div class="imgBox">
+            <img src="coca_cola_img/img1.png" class="coca-cola">
+        </div>
+        <ul class="thumb">
+            <li><img src="coca_cola_img/thumb1.png" onclick="imgSlinder('coca_cola_img/img1.png');changeCircleColor('#f40008')"></li>
+            <li><img src="coca_cola_img/thumb2.png" onclick="imgSlinder('coca_cola_img/img2.png');changeCircleColor('#f0131b')"></li>
+            <li><img src="coca_cola_img/thumb3.png" onclick="imgSlinder('coca_cola_img/img3.png');changeCircleColor('#df141b')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="coca_cola_img/facebook.png"></a></li>
+            <li><a href="#"><img src="coca_cola_img/twitter.png"></a></li>
+            <li><a href="#"><img src="coca_cola_img/instaram.png"></a></li>
+        </ul>
+    </section>
+
+<script type="text/javascript">
+    function imgSlinder (anything){
+    document.querySelector ('.coca-cola') .src = anything;
+    }
+
+    function changeCircleColor (color){
+        const circle=document .querySelector ('.circle');
+        circle.style.background = color;
+    }
+</script>
+</body>
+</html>
